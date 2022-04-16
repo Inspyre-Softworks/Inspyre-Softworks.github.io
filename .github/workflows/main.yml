@@ -1,0 +1,5 @@
+- name: Asciicast to GIF
+  uses: dgzlopes/asciicast-to-gif-action@v1
+  with:
+    input: https://asciinema.org/a/XVy2xW3NF6TQZ1rUDNI3Ywbmz.cast
+    output: asciicast.gif
