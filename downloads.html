@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Download releases, packages, and source code from Inspyre Softworks.">
+  <meta name="theme-color" content="#0a0d14">
+  <title>Downloads | Inspyre Softworks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Inspyre Softworks home">
+        <span class="brand-mark" aria-hidden="true">IS</span>
+        <span class="brand-copy">
+          <strong>Inspyre Softworks</strong>
+          <small>Build curious things.</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#hardware">Hardware</a>
+        <a href="index.html#docs">Documentation</a>
+        <a class="nav-download active" href="downloads.html">Downloads</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero downloads-hero">
+        <div>
+          <p class="eyebrow"><span></span> Official builds and packages</p>
+          <h1>Downloads without the scavenger hunt.</h1>
+          <p>Choose a project below for official releases, installation commands, or source code. No mystery mirrors. No fake download buttons. You’re welcome.</p>
+        </div>
+        <div class="download-hero-glyph" aria-hidden="true">
+          <span>↓</span>
+          <i></i><i></i><i></i>
+        </div>
+      </section>
+
+      <section class="download-toolbar" aria-label="Download filters">
+        <div class="filter-group" role="group" aria-label="Filter downloads by platform">
+          <button class="filter-button active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="windows">Windows</button>
+          <button class="filter-button" type="button" data-filter="python">Python</button>
+          <button class="filter-button" type="button" data-filter="source">Source</button>
+        </div>
+        <p><span class="status-dot"></span> Downloads are served from official GitHub and package-hosting pages.</p>
+      </section>
+
+      <section class="downloads-grid" aria-live="polite">
+        <article class="download-card download-card-featured" data-category="windows source">
+          <div class="download-card-head">
+            <div class="download-icon">PF</div>
+            <div>
+              <span class="release-type">Windows application</span>
+              <h2>PolyFi: Ranked</h2>
+            </div>
+            <span class="recommended-badge">Recommended</span>
+          </div>
+          <p>Rank preferred Wi-Fi networks, automatically recover from poor connections, and switch back when your best network returns.</p>
+          <dl class="download-meta">
+            <div><dt>Platform</dt><dd>Windows 10/11</dd></div>
+            <div><dt>Format</dt><dd>Release assets</dd></div>
+            <div><dt>License</dt><dd>Open source</dd></div>
+          </dl>
+          <div class="download-actions">
+            <a class="button button-primary" href="https://github.com/Inspyre-Softworks/PolyFi-Ranked/releases">View releases <span aria-hidden="true">↓</span></a>
+            <a class="button button-quiet" href="https://github.com/Inspyre-Softworks/PolyFi-Ranked">Source code <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="download-card" data-category="python source">
+          <div class="download-card-head">
+            <div class="download-icon">MF</div>
+            <div>
+              <span class="release-type">Python package</span>
+              <h2>IS Matrix Forge</h2>
+            </div>
+          </div>
+          <p>Control Framework Laptop LED matrix modules with a friendly Python API for drawing, animation, text, and scenes.</p>
+          <div class="install-command">
+            <code>pip install IS-Matrix-Forge</code>
+            <button type="button" data-copy="pip install IS-Matrix-Forge" aria-label="Copy install command">Copy</button>
+          </div>
+          <div class="download-actions">
+            <a class="button button-secondary" href="https://pypi.org/project/IS-Matrix-Forge/">Open on PyPI <span aria-hidden="true">↗</span></a>
+            <a class="button button-quiet" href="https://github.com/Inspyre-Softworks/IS-Matrix-Forge">Source code <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="download-card" data-category="windows python source">
+          <div class="download-card-head">
+            <div class="download-icon">MD</div>
+            <div>
+              <span class="release-type">Music utility</span>
+              <h2>MIDIDiff</h2>
+            </div>
+          </div>
+          <p>Compare MIDI files and surface meaningful musical differences without manually digging through every raw event.</p>
+          <dl class="download-meta compact">
+            <div><dt>Platform</dt><dd>Cross-platform</dd></div>
+            <div><dt>Source</dt><dd>Python</dd></div>
+          </dl>
+          <div class="download-actions">
+            <a class="button button-secondary" href="https://github.com/Inspyre-Softworks/MIDIDiff/releases">View releases <span aria-hidden="true">↓</span></a>
+            <a class="button button-quiet" href="https://github.com/Inspyre-Softworks/MIDIDiff">Source code <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="download-card" data-category="windows source">
+          <div class="download-card-head">
+            <div class="download-icon">IP</div>
+            <div>
+              <span class="release-type">Desktop utility</span>
+              <h2>IP Reveal</h2>
+            </div>
+          </div>
+          <p>A focused desktop tool for looking up and presenting useful IP information with both graphical and headless variants.</p>
+          <dl class="download-meta compact">
+            <div><dt>Platform</dt><dd>Desktop</dd></div>
+            <div><dt>License</dt><dd>Open source</dd></div>
+          </dl>
+          <div class="download-actions">
+            <a class="button button-secondary" href="https://github.com/Inspyre-Softworks/ip-reveal/releases">View releases <span aria-hidden="true">↓</span></a>
+            <a class="button button-quiet" href="https://github.com/Inspyre-Softworks/ip-reveal">Source code <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="download-card" data-category="python source">
+          <div class="download-card-head">
+            <div class="download-icon">IL</div>
+            <div>
+              <span class="release-type">Python library</span>
+              <h2>Inspy Logger</h2>
+            </div>
+          </div>
+          <p>Structured, readable logging utilities designed to make application output useful during development and diagnosis.</p>
+          <div class="install-command">
+            <code>git clone https://github.com/Inspyre-Softworks/inspy_logger.git</code>
+            <button type="button" data-copy="git clone https://github.com/Inspyre-Softworks/inspy_logger.git" aria-label="Copy clone command">Copy</button>
+          </div>
+          <div class="download-actions">
+            <a class="button button-secondary" href="https://github.com/Inspyre-Softworks/inspy_logger/releases">View releases <span aria-hidden="true">↓</span></a>
+            <a class="button button-quiet" href="https://github.com/Inspyre-Softworks/inspy_logger">Source code <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="download-card" data-category="source">
+          <div class="download-card-head">
+            <div class="download-icon">PR</div>
+            <div>
+              <span class="release-type">Source preview</span>
+              <h2>Photo Reliquary</h2>
+            </div>
+          </div>
+          <p>An evolving photo-management project focused on checksums, metadata hygiene, search, classification, and safer organization.</p>
+          <dl class="download-meta compact">
+            <div><dt>Status</dt><dd>Early development</dd></div>
+            <div><dt>Access</dt><dd>Source code</dd></div>
+          </dl>
+          <div class="download-actions">
+            <a class="button button-secondary" href="https://github.com/Inspyre-Softworks/Photo-Reliquary">Open repository <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </section>
+
+      <section class="download-notes">
+        <article>
+          <span class="note-icon">✓</span>
+          <div><h2>Use official sources</h2><p>Release files and packages linked here originate from Inspyre Softworks repositories or recognized package indexes.</p></div>
+        </article>
+        <article>
+          <span class="note-icon">#</span>
+          <div><h2>Verify when available</h2><p>For packaged applications, compare checksums or signatures published alongside a release before running the file.</p></div>
+        </article>
+        <article>
+          <span class="note-icon">⌘</span>
+          <div><h2>Developers welcome</h2><p>Every card includes source access when available, so you can inspect, build, fork, or contribute.</p></div>
+        </article>
+      </section>
+
+      <section class="source-banner">
+        <div>
+          <p class="eyebrow"><span></span> Need something else?</p>
+          <h2>Browse every Inspyre Softworks repository.</h2>
+        </div>
+        <a class="button button-light" href="https://github.com/Inspyre-Softworks">Open GitHub <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <a class="brand footer-brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">IS</span>
+          <span class="brand-copy"><strong>Inspyre Softworks</strong><small>Build curious things.</small></span>
+        </a>
+        <p>Open-source software, hardware experiments, and documentation by Taylor B. | Inspyre-Softworks.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/Inspyre-Softworks">GitHub</a>
+        <a href="downloads.html">Downloads</a>
+        <a href="index.html#docs">Documentation</a>
+      </div>
+      <p class="footer-copy">© <span data-current-year></span> Inspyre Softworks. Open source, thoughtfully assembled.</p>
+    </footer>
+  </div>
+</body>
+</html>
