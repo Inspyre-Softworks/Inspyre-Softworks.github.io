@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Download releases, packages, and source code from Inspyre Softworks.">
+  <meta name="description" content="Download releases, packages, gems, and source code from Inspyre Softworks and Taylor's project archive.">
   <meta name="theme-color" content="#0a0d14">
   <title>Downloads | Inspyre Softworks</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,9 +40,9 @@
     <main>
       <section class="page-hero downloads-hero">
         <div>
-          <p class="eyebrow"><span></span> Official builds and packages</p>
+          <p class="eyebrow"><span></span> Official builds, packages, gems, and source</p>
           <h1>Downloads without the scavenger hunt.</h1>
-          <p>Choose a project below for official releases, installation commands, or source code. No mystery mirrors. No fake download buttons. You’re welcome.</p>
+          <p>Choose a project below for official releases, installation commands, gems, or source code. No mystery mirrors. No fake download buttons. You’re welcome.</p>
         </div>
         <div class="download-hero-glyph" aria-hidden="true">
           <span>↓</span>
@@ -51,10 +51,12 @@
       </section>
 
       <section class="download-toolbar" aria-label="Download filters">
-        <div class="filter-group" role="group" aria-label="Filter downloads by platform">
+        <div class="filter-group" role="group" aria-label="Filter downloads by platform or language">
           <button class="filter-button active" type="button" data-filter="all">All</button>
           <button class="filter-button" type="button" data-filter="windows">Windows</button>
           <button class="filter-button" type="button" data-filter="python">Python</button>
+          <button class="filter-button" type="button" data-filter="ruby">Ruby</button>
+          <button class="filter-button" type="button" data-filter="cpp">C++</button>
           <button class="filter-button" type="button" data-filter="source">Source</button>
         </div>
         <p><span class="status-dot"></span> Downloads are served from official GitHub and package-hosting pages.</p>
@@ -158,6 +160,44 @@
           </div>
         </article>
 
+        <article class="download-card" data-category="ruby source">
+          <div class="download-card-head">
+            <div class="download-icon">RB</div>
+            <div>
+              <span class="release-type">Ruby project archive</span>
+              <h2>Ruby utilities &amp; Cinch plugins</h2>
+            </div>
+          </div>
+          <p>Browse Ruby networking tools, IRC bots and plugins, API clients, terminal experiments, and older gems from Taylor’s personal project catalog.</p>
+          <dl class="download-meta compact">
+            <div><dt>Language</dt><dd>Ruby</dd></div>
+            <div><dt>Access</dt><dd>Source projects</dd></div>
+          </dl>
+          <div class="download-actions">
+            <a class="button button-secondary" href="https://github.com/search?q=user%3Atayjaybabee+language%3ARuby&amp;type=repositories">Browse Ruby projects <span aria-hidden="true">↗</span></a>
+            <a class="button button-quiet" href="https://github.com/tayjaybabee/ruby-UDP-chat">Open UDP Chat <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="download-card" data-category="cpp source">
+          <div class="download-card-head">
+            <div class="download-icon">C++</div>
+            <div>
+              <span class="release-type">Embedded source project</span>
+              <h2>Satisfactory Efficiency Terminal</h2>
+            </div>
+          </div>
+          <p>A Wio Terminal dashboard that displays Satisfactory production and consumption data using embedded C++ and a serial data bridge.</p>
+          <dl class="download-meta compact">
+            <div><dt>Target</dt><dd>Wio Terminal</dd></div>
+            <div><dt>Language</dt><dd>C++ / Arduino</dd></div>
+          </dl>
+          <div class="download-actions">
+            <a class="button button-secondary" href="https://github.com/tayjaybabee/satisfactory-efficiency-terminal">Open repository <span aria-hidden="true">↗</span></a>
+            <a class="button button-quiet" href="https://github.com/search?q=user%3Atayjaybabee+language%3AC%2B%2B&amp;type=repositories">Browse C++ projects <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
         <article class="download-card" data-category="source">
           <div class="download-card-head">
             <div class="download-icon">PR</div>
@@ -180,7 +220,7 @@
       <section class="download-notes">
         <article>
           <span class="note-icon">✓</span>
-          <div><h2>Use official sources</h2><p>Release files and packages linked here originate from Inspyre Softworks repositories or recognized package indexes.</p></div>
+          <div><h2>Use official sources</h2><p>Release files and packages linked here originate from Inspyre Softworks repositories, Taylor’s public archive, or recognized package indexes.</p></div>
         </article>
         <article>
           <span class="note-icon">#</span>
@@ -195,9 +235,12 @@
       <section class="source-banner">
         <div>
           <p class="eyebrow"><span></span> Need something else?</p>
-          <h2>Browse every Inspyre Softworks repository.</h2>
+          <h2>Browse every Inspyre Softworks and Taylor project.</h2>
         </div>
-        <a class="button button-light" href="https://github.com/Inspyre-Softworks">Open GitHub <span aria-hidden="true">↗</span></a>
+        <div class="download-actions">
+          <a class="button button-light" href="https://github.com/Inspyre-Softworks">Organization <span aria-hidden="true">↗</span></a>
+          <a class="button button-light" href="https://github.com/tayjaybabee?tab=repositories">Personal archive <span aria-hidden="true">↗</span></a>
+        </div>
       </section>
     </main>
 
@@ -207,7 +250,7 @@
           <span class="brand-mark" aria-hidden="true">IS</span>
           <span class="brand-copy"><strong>Inspyre Softworks</strong><small>Build curious things.</small></span>
         </a>
-        <p>Open-source software, hardware experiments, and documentation by Taylor B. | Inspyre-Softworks.</p>
+        <p>Open-source Python, Ruby, and C++ software, hardware experiments, and documentation by Taylor B. | Inspyre-Softworks.</p>
       </div>
       <div class="footer-links">
         <a href="https://github.com/Inspyre-Softworks">GitHub</a>
