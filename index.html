@@ -1,1 +1,248 @@
-Hello World
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Inspyre Softworks builds practical open-source Python, Ruby, and C++ tools, hardware experiments, and developer documentation.">
+  <meta name="theme-color" content="#0a0d14">
+  <title>Inspyre Softworks | Open-source software and hardware</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Inspyre Softworks home">
+        <span class="brand-mark" aria-hidden="true">IS</span>
+        <span class="brand-copy">
+          <strong>Inspyre Softworks</strong>
+          <small>Build curious things.</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#hardware">Hardware</a>
+        <a href="#docs">Documentation</a>
+        <a class="nav-download" href="downloads.html">Downloads</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Independent open-source engineering</p>
+          <h1>Software with a pulse.<br><em>Hardware with a purpose.</em></h1>
+          <p class="hero-lede">Inspyre Softworks is a collection of practical Python, Ruby, and C++ projects, desktop utilities, and hardware experiments built in public.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore projects <span aria-hidden="true">↘</span></a>
+            <a class="button button-secondary" href="downloads.html">Get the builds</a>
+          </div>
+          <div class="hero-meta" aria-label="Project summary">
+            <div><strong>Polyglot</strong><span>Python, Ruby, and C++</span></div>
+            <div><strong>Hardware-aware</strong><span>LEDs, sensors, controllers</span></div>
+            <div><strong>Built openly</strong><span>Source, docs, releases</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="signal-card signal-card-main">
+            <span class="signal-label">ACTIVE BUILD</span>
+            <strong>PolyFi: Ranked</strong>
+            <p>Intelligent Wi-Fi preference management for Windows.</p>
+            <div class="signal-line"><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+          <div class="signal-card signal-card-small card-python">
+            <span>PY</span>
+            <strong>Libraries</strong>
+          </div>
+          <div class="signal-card signal-card-small card-hardware">
+            <span>C++</span>
+            <strong>Native + hardware</strong>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section-block">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span></span> Featured work</p>
+            <h2>Projects across languages, platforms, and mildly unreasonable ideas.</h2>
+          </div>
+          <a class="text-link" href="https://github.com/Inspyre-Softworks">View the organization <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card project-card-featured">
+            <div class="card-topline">
+              <span class="project-number">01</span>
+              <span class="status-badge"><i></i> Active</span>
+            </div>
+            <div>
+              <p class="project-kicker">Windows utility</p>
+              <h3>PolyFi: Ranked</h3>
+              <p>Keep preferred Wi-Fi networks ranked, recover intelligently, and switch back automatically when a better connection returns.</p>
+            </div>
+            <div class="project-footer">
+              <div class="tag-row"><span>Python</span><span>Windows</span><span>Networking</span></div>
+              <a href="https://github.com/Inspyre-Softworks/PolyFi-Ranked">Repository <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="card-topline">
+              <span class="project-number">02</span>
+              <span class="status-badge"><i></i> Active</span>
+            </div>
+            <div>
+              <p class="project-kicker">Python library</p>
+              <h3>IS Matrix Forge</h3>
+              <p>A clean Python interface for driving Framework Laptop LED matrix modules, animations, text, and custom scenes.</p>
+            </div>
+            <div class="project-footer">
+              <div class="tag-row"><span>Python</span><span>LED Matrix</span><span>USB</span></div>
+              <a href="https://github.com/Inspyre-Softworks/IS-Matrix-Forge">Repository <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="card-topline">
+              <span class="project-number">03</span>
+              <span class="status-badge"><i></i> Active</span>
+            </div>
+            <div>
+              <p class="project-kicker">Creative utility</p>
+              <h3>MIDIDiff</h3>
+              <p>Inspect and compare MIDI files with a workflow designed for musicians who need useful differences, not a wall of bytes.</p>
+            </div>
+            <div class="project-footer">
+              <div class="tag-row"><span>MIDI</span><span>Python</span><span>Music tools</span></div>
+              <a href="https://github.com/Inspyre-Softworks/MIDIDiff">Repository <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="card-topline">
+              <span class="project-number">04</span>
+              <span class="status-badge"><i></i> Archive</span>
+            </div>
+            <div>
+              <p class="project-kicker">Ruby collection</p>
+              <h3>Ruby utilities &amp; bots</h3>
+              <p>A long-running catalog of Ruby work including Cinch IRC plugins, networking experiments, API clients, terminal tools, and small desktop projects.</p>
+            </div>
+            <div class="project-footer">
+              <div class="tag-row"><span>Ruby</span><span>IRC</span><span>Networking</span></div>
+              <a href="https://github.com/search?q=user%3Atayjaybabee+language%3ARuby&amp;type=repositories">Browse Ruby projects <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="card-topline">
+              <span class="project-number">05</span>
+              <span class="status-badge"><i></i> Source</span>
+            </div>
+            <div>
+              <p class="project-kicker">C++ / embedded</p>
+              <h3>Satisfactory Efficiency Terminal</h3>
+              <p>A Wio Terminal display project that surfaces production and consumption data from Satisfactory through a serial bridge.</p>
+            </div>
+            <div class="project-footer">
+              <div class="tag-row"><span>C++</span><span>Arduino</span><span>Wio Terminal</span></div>
+              <a href="https://github.com/tayjaybabee/satisfactory-efficiency-terminal">Repository <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="hardware" class="section-block hardware-block">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span></span> Hardware experiments</p>
+            <h2>Code that escapes the screen.</h2>
+          </div>
+        </div>
+
+        <div class="hardware-grid">
+          <article class="hardware-panel">
+            <span class="panel-icon">▦</span>
+            <h3>LED matrix systems</h3>
+            <p>Battery monitors, notification scrollers, animations, and reusable control layers for Framework Laptop input modules.</p>
+            <a href="https://github.com/Inspyre-Softworks/IS-Matrix-Forge">Explore Matrix Forge <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="hardware-panel">
+            <span class="panel-icon">⌁</span>
+            <h3>Controllers &amp; embedded builds</h3>
+            <p>Reverse engineering and custom control experiments spanning C++, Python, keyboards, sensors, microcontrollers, and everyday hardware.</p>
+            <a href="https://github.com/tayjaybabee/satisfactory-efficiency-terminal">Open an embedded project <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="hardware-panel panel-terminal">
+            <div class="terminal-head"><i></i><i></i><i></i><span>matrix-demo.py</span></div>
+            <pre><code><span class="code-dim">from</span> is_matrix_forge <span class="code-dim">import</span> get_controllers
+
+matrix = get_controllers()[0]
+matrix.scroll_text(
+    <span class="code-string">'Build curious things.'</span>
+)</code></pre>
+          </article>
+        </div>
+      </section>
+
+      <section id="docs" class="section-block docs-block">
+        <div class="docs-copy">
+          <p class="eyebrow"><span></span> Documentation</p>
+          <h2>Readable docs are part of the product.</h2>
+          <p>Each maintained project aims to include practical setup instructions, examples, API references, and the reasoning behind important design decisions.</p>
+          <a class="button button-secondary" href="https://github.com/Inspyre-Softworks">Browse project docs</a>
+        </div>
+        <div class="docs-list">
+          <a href="https://github.com/Inspyre-Softworks/PolyFi-Ranked">
+            <span>01</span><strong>Installation guides</strong><em>→</em>
+          </a>
+          <a href="https://github.com/Inspyre-Softworks/IS-Matrix-Forge">
+            <span>02</span><strong>API and examples</strong><em>→</em>
+          </a>
+          <a href="https://github.com/tayjaybabee?tab=repositories">
+            <span>03</span><strong>Ruby and C++ project history</strong><em>→</em>
+          </a>
+        </div>
+      </section>
+
+      <section class="download-cta">
+        <div>
+          <p class="eyebrow"><span></span> Ready to run something?</p>
+          <h2>Grab a release, package, gem, or source archive.</h2>
+        </div>
+        <a class="button button-light" href="downloads.html">Open downloads <span aria-hidden="true">↘</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <a class="brand footer-brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">IS</span>
+          <span class="brand-copy"><strong>Inspyre Softworks</strong><small>Build curious things.</small></span>
+        </a>
+        <p>Open-source Python, Ruby, and C++ software, hardware experiments, and documentation by Taylor B. | Inspyre-Softworks.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/Inspyre-Softworks">GitHub</a>
+        <a href="downloads.html">Downloads</a>
+        <a href="#docs">Documentation</a>
+      </div>
+      <p class="footer-copy">© <span data-current-year></span> Inspyre Softworks. Open source, thoughtfully assembled.</p>
+    </footer>
+  </div>
+</body>
+</html>
